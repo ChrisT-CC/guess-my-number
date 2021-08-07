@@ -1,104 +1,83 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Guess my number
 
-Welcome USER_NAME,
+**Guess my number** is a simple casual game. Almost anyone with access to a device will be able to play it. The player has 10 tries to guess a randomly generated number form 1 to 100. After the initial guess, the player will get a feedback to find the number "you guess is lower/higher then my number". 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+Have fun!!
 
-## Gitpod Reminders
+A live version of the game will be here: 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Mockup image](assets/images/wireframes.png)
 
-`python3 -m http.server`
+## Table of contents
+1. [UX](#UX)
+    - [User Stories](#User-stories)
+    - [Structure](#Structure)
+    - [Skeleton](#Skeleton)
+    - [Surface](#Surface)
+2. [Features](#Features)
+    - [Existing Features](#Existing-Features) 
+        - [Feature 1](#Feature-1)
+        - [Feature 2](#Feature-2)
+        - [Feature 3](#Feature-3)
+        - [Feature 4](#Feature-4)
+        - [Feature 5](#Feature-5)
+        - [404 error page](#404-error-page)
+    - [Future Features](#Future-Features)
+3. [Technologies Used](#Technologies-Used)
+4. [Testing](#Testing)
+5. [Deployment](#Deployment)
+6. [Credits](#Credits)
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## UX
+In this section you'll find elements of UX process.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User Stories
 
-A blue button should appear to click: _Make Public_,
+#### As a website owner
+- I want a simple, casual and easy to play game
+- I want my users to be able to play the game intuitively and easily
 
-Another blue button should appear to click: _Open Browser_.
+#### As a user
+- I want a fun and simple game to play
+- I want to be able to play the game with my keyboard
+- I want to be able to see my score as I play the game
+- I want to be able to play the game on any device 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Structure
 
-To log into the Heroku toolbelt CLI:
+### Skeleton
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Surface
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Features
 
-------
+### Existing Features
 
-## Release History
+### - Feature 1
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### - Feature 2
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### - Feature 3
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### - Feature 4
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### - Feature 5
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Future Features
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Technologies Used
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+1. [HTML](https://en.wikipedia.org/wiki/HTML) - Programming language used for website structure and content
+1. [CSS](https://en.wikipedia.org/wiki/CSS) - Programming language used for styling website
+1. [javascript](https://www.javascript.com/) - Programming language used to create user interaction
+1. [Balsamiq](https://balsamiq.com/) - Used to create wireframes
+1. [Gitpod](https://www.gitpod.io/) - IDE (Integrated Development Environment), for writing, editing and saving code
+1. [GitHub](https://github.com/) - Code repository hosting platform
+1. [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Chrome's built in web developer tools
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Testing
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Deployment
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Credits
