@@ -30,7 +30,16 @@ header {
     max-width: 800px;
     margin: 20px auto 20px auto;
     box-sizing: border-box;
-    padding: 15vh;
+    /* padding: 15vh; */
+}
+
+.game-area h2 {
+    padding-top: 100px;  /* temporary style */
+}
+
+#new-game {
+    float: right;
+    margin: 10px 10px 0 0;
 }
 
 footer {
@@ -49,7 +58,7 @@ footer {
     width: 60px;
 }
 
-#guess {
+.button {
     display: block;
     margin: 25px auto;
     height: 35px;
