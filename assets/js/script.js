@@ -15,8 +15,15 @@ function startGame() {
 }
 
 function generateRandomNumber() {
-    console.log("Generate Random Number");
+
+    // Create a random number from 1 to 100
+    let rNumber = Math.floor(Math.random() * 100) + 1;
+    return rNumber;
+    
 }
+
+
+
 
 function checkValidNumber() {
     console.log("  Check Valid Number 1 - 100");
