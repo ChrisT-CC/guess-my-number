@@ -43,8 +43,13 @@ In this section you'll find elements of UX process.
 - I want to be able to see my score as I play the game
 - I want to be able to play the game on any device 
 
+[Back to top](#Table-of-contents)
+
 ### Wireframes
 ![Wireframes](assets/images/wireframes.png)
+
+[Back to top](#Table-of-contents)
+
 
 ### Surface
 
@@ -74,6 +79,9 @@ In this section you'll find elements of UX process.
 
 ### Future Features
 
+[Back to top](#Table-of-contents)
+
+
 ## Technologies Used
 
 1. [HTML](https://en.wikipedia.org/wiki/HTML) - Programming language used for website structure and content
@@ -84,8 +92,56 @@ In this section you'll find elements of UX process.
 1. [GitHub](https://github.com/) - Code repository hosting platform
 1. [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Chrome's built in web developer tools
 
+[Back to top](#Table-of-contents)
+
+
 ## Testing
 
 ## Deployment
 
+This section describes the process of deploying the project to GitHub Pages.
+
+### Deploying to GitHub Pages
+1. Open a browser and navigate to [Github.com](https://github.com/)
+2. Log in to GitHub account
+3. Click on "Responsitories" or select "Your repositories" from profile menu at the top right corner
+4. Select "guess-my-number"
+5. Go to "Settings" tab
+6. Scroll down until you find "Github pages" and press the link you find there, or just choose "pages" from the left sidebar
+7. Under "source" change "none" to "master" branch and then press "save"
+8. Refresh the page (can take a few minutes) and then under "Github pages" you have the new URL for the live project
+
+### Running the project in [Gitpod](https://www.gitpod.io/) 
+1. Open a browser and navigate to [Github.com](https://github.com/)
+2. Log in to GitHub account
+3. Click on "Responsitories" or select "Your repositories" from profile menu at the top right corner
+4. Select "guess-my-number"
+5. Add "gitpod.io/#" before URL in address bar and press "enter"
+
+### Running the project locally
+1. Open a browser and navigate to [Github.com](https://github.com/)
+2. Log in to GitHub account
+3. Click on "Responsitories" or select "Your repositories" from profile menu at the top right corner
+4. Select "guess-my-number"
+5. Locate and click on the "Code" button
+6. Copy the URL under "HTTPS"
+7. In your IDE of choice, create a new repository
+8. Type "git clone 'copied URL'" and press enter
+
+[Back to top](#Table-of-contents)
+
 ## Credits
+
+### Content
+
+Code Institute's [Gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template) was used to to create this project.
+
+Code Institute's [Love maths readme template](https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md) was used to write this readme file.
+
+### Acknowledgements
+
+Thanks to my mentor for suggetions, time and combing through my tangled js knowledge.
+
+Thanks to my family, friends and peers for suggestions, reviews and feedback.
+
+[Back to top](#Table-of-contents)
