@@ -1,10 +1,15 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
-
 document.addEventListener("DOMContentLoaded", function() {
     let startButton = document.getElementById("new-game");
     startButton.addEventListener("click", startGame)
 })
+
+// Get elements form the DOM and assign them to variables
+let guessButton = document.getElementById("guess");
+let userGuess = document.getElementById("answer-box").value;
+let feedback = document.getElementById("feedback");
+let yourTry = document.getElementById("tries");
 
 function startGame() {
     console.log("Start game");
@@ -19,11 +24,8 @@ function generateRandomNumber() {
     // Create a random number from 1 to 100
     let rNumber = Math.floor(Math.random() * 100) + 1;
     return rNumber;
-    
+
 }
-
-
-
 
 function checkValidNumber() {
     console.log("  Check Valid Number 1 - 100");
