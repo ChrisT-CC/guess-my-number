@@ -11,15 +11,14 @@ A live version of the game will be here:
 ## Table of contents
 1. [UX](#UX)
     - [User Stories](#User-stories)
-    - [Structure](#Structure)
     - [Skeleton](#Skeleton)
     - [Surface](#Surface)
 2. [Features](#Features)
     - [Existing Features](#Existing-Features) 
-        - [Feature 1](#Feature-1)
-        - [Feature 2](#Feature-2)
-        - [Feature 3](#Feature-3)
-        - [Feature 4](#Feature-4)
+        - [Header](#Header)
+        - [Game area](#Game-area)
+        - [Feedback area](#Feedback-area)
+        - [The footer](#The-footer)
         - [Feature 5](#Feature-5)
         - [404 error page](#404-error-page)
     - [Future Features](#Future-Features)
@@ -44,9 +43,8 @@ In this section you'll find elements of UX process.
 - I want to be able to see my score as I play the game
 - I want to be able to play the game on any device 
 
-### Structure
-
-### Skeleton
+### Wireframes
+![Wireframes](assets/images/wireframes.png)
 
 ### Surface
 
@@ -54,15 +52,25 @@ In this section you'll find elements of UX process.
 
 ### Existing Features
 
-### - Feature 1
+### - Header
+ - The header contains the title of the game and is positioned at the top of the page. The title clearly explains what the website is about.
 
-### - Feature 2
+### - Game area
+ - This is the place where the user can play the game and it contains a input box and a submit button ("your guess").
+ - A random number is generated.
+ - In the input box, the user can enter a number. The number is checked to be between 1 and 100 and if it's valid, is checked against the random number. 
+ - The user has 10 tries to guess the number.
 
-### - Feature 3
+### - Feedback area
+ - This is the area that helps the user to find the right number.
+ - Every time the user submits a number with "your guess" button, a "to high" or "too low" message is generated. 
+ - User's number is stored below feedback message.
 
-### - Feature 4
+### - The footer
+ - The footer contains the rules of the game and it's positioned at the bottom of the page.
 
-### - Feature 5
+### - 404 error page
+ - A 404 error page was created to give users some feedback when they try to reach a non-existent page on this website.
 
 ### Future Features
 
