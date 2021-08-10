@@ -11,7 +11,7 @@ A live version of the game will be here:
 ## Table of contents
 1. [UX](#UX)
     - [User Stories](#User-stories)
-    - [Skeleton](#Skeleton)
+    - [Wireframes](#Wireframes)
     - [Surface](#Surface)
 2. [Features](#Features)
     - [Existing Features](#Existing-Features) 
