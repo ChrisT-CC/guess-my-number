@@ -19,9 +19,13 @@ function startGame() {
     checkValidNumber();
 }
 
+
+/**
+ * Generate a random number from 1 to 100
+ * @returns rNumber
+ */
 function generateRandomNumber() {
 
-    // Create a random number from 1 to 100
     let rNumber = Math.floor(Math.random() * 100) + 1;
     return rNumber;
 
