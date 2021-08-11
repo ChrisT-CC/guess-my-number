@@ -29,8 +29,10 @@ header {
     height: 10vh;
     max-width: 400px;
     margin: 20px auto;
-    padding: 25px;
+    padding: 20px;
     box-sizing: border-box;
+    border-radius: 25px 25px 5px 5px;
+    border: 10px inset #9A93A9;
 }
 
 .game-area {
@@ -42,16 +44,26 @@ header {
     max-width: 800px;
     margin: 20px auto 20px auto;
     box-sizing: border-box;
-    /* padding: 15vh; */
+    border-radius: 25px 25px 5px 5px;
+    border: 10px inset #9A93A9;
+
 }
 
 .game-area h2 {
     padding-top: 100px;  /* temporary style */
 }
 
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
 #new-game {
     float: right;
-    margin: 10px 10px 0 0;
+    margin: 20px 20px 0 0;
 }
 
 footer {
@@ -60,21 +72,31 @@ footer {
     height: 10vh;
     max-width: 800px;
     margin: 20px auto;
-    padding: 15px;
+    /* padding: 15px; */
     box-sizing: border-box;
+    border-radius: 5px 5px 25px 25px;
+    border: 10px outset #9A93A9;
 }
 
 #answer-box {
     margin-top: 25px;
-    height: 25px;
-    width: 60px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #7A5362;
+    text-align: center;
+    height: 50px;
+    width: 200px;
 }
 
 .button {
     background-color: #9A93A9;
     display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: aliceblue;
     margin: 25px auto;
-    height: 35px;
-    width: 100px;
+    height: 50px;
+    width: 200px;
     border-radius: 15px;
+    border: 10px outset #9A93A9;
 }
