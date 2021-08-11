@@ -8,6 +8,7 @@
 /* Center text */
 h1, h2, p {
     text-align: center;
+    color: #7A5362;
 }
 
 /* Body */
@@ -22,7 +23,8 @@ body {
 
 /* Game layout */
 header {
-    background-color: lightblue;
+    background-color:#EBF4F7;
+    color: #7A5362;
     width: 50%;
     height: 10vh;
     max-width: 400px;
@@ -33,7 +35,7 @@ header {
 
 .game-area {
     text-align: center;
-    background-color: lightblue;
+    background-color: #EBF4F7;
     width: 75%;
     height: 60vh;
     max-height: 600px;
@@ -53,7 +55,7 @@ header {
 }
 
 footer {
-    background-color: lightblue;
+    background-color: #EBF4F7;
     width: 75%;
     height: 10vh;
     max-width: 800px;
@@ -69,6 +71,7 @@ footer {
 }
 
 .button {
+    background-color: #9A93A9;
     display: block;
     margin: 25px auto;
     height: 35px;
