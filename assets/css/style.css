@@ -10,6 +10,16 @@ h1, h2, p {
     text-align: center;
 }
 
+/* Body */
+body {
+    background-color: antiquewhite;
+    /*  Code from datacadmia for background opacity
+        https://datacadamia.com/web/css/opacity#background_image_opacity */
+    background-image: linear-gradient(to right, rgba(255,255,255, 0.9) 0 100%), url(../images/background-image.jpg);
+    background-size: cover;
+    
+}
+
 /* Game layout */
 header {
     background-color: lightblue;
