@@ -50,18 +50,20 @@ function checkValidNumber() {
     checkGuess();
 }
 
+/**
+ * Check validated number against the random number
+ */
 function checkGuess() {
-    console.log("      guess = rNumber?");
-    console.log("        if yes - alert: you won! - exit loop");
-    console.log("          if no - guess < rNumber?");
-    console.log("            if yes - feedback alert: to low! - incrementTries");
-    generateFeedback();
-    incrementTries();
-    console.log("              if no - guess > rNumber?");
-    console.log("                if yes - feedback alert: to high! - incrementTries");
-    generateFeedback();
-    incrementTries();
-    console.log("                if no - alert: error message! - exit loop");
+
+    if (userGuess.value < genNo) {
+        feedback.textContent = " too low";
+        yourTry.textContent += userGuess.value + " ";
+    } else if (userGuess.value > genNo) {
+        feedback.textContent = " too high";
+        yourTry.textContent += userGuess.value + " ";
+    } else if (userGuess.value == genNo) {
+        alert(`Yuppie!! You won. The number was: ${userGuess.value}`);
+    }
 }
 
 function incrementTries() {
