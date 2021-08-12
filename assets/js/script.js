@@ -1,4 +1,3 @@
-
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 document.addEventListener("DOMContentLoaded", function() {
@@ -14,22 +13,23 @@ let yourTry = document.getElementById("tries");
 
 function startGame() {
     console.log("Start game");
-    generateRandomNumber();
+    // generateRandomNumber();
     console.log("Loop 10 times");
     console.log("  Enter your guess");
-    checkValidNumber();
+    // checkValidNumber();
 }
 
-/**
- * Generate a random number from 1 to 100
- * @returns rNumber
- */
-function generateRandomNumber() {
-    let rNumber = Math.floor(Math.random() * 100) + 1;
-    return rNumber;
-}
+// /**
+//  * Generate a random number from 1 to 100
+//  * @returns rNumber
+//  */
+// function generateRandomNumber() {
+//     let rNumber = Math.floor(Math.random() * 100) + 1;
+//     return rNumber;
+// }
 
 function checkValidNumber() {
+    console.log(rNumber);
     console.log("  Check Valid Number 1 - 100");
     console.log("    if yes - checkGuess");
     checkGuess();
@@ -57,3 +57,7 @@ function incrementTries() {
 function generateFeedback() {
     console.log("                  Feedback message!");
 }
+
+// add event listener for GuessButton and check if the user guess is a valid number
+guessButton.addEventListener("click", checkValidNumber);
+let rNumber = Math.floor(Math.random() * 100) + 1;
