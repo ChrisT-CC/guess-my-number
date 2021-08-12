@@ -6,21 +6,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Get elements form the DOM and assign them to variables
-let guessButton = document.getElementById("guess");
-let userGuess = document.getElementById("answer-box");
-let feedback = document.getElementById("feedback");
-let yourTry = document.getElementById("tries");
-let genNo = generateRandomNumber();
+const guessButton = document.getElementById("guess");
+const userGuess = document.getElementById("answer-box");
+const feedback = document.getElementById("feedback");
+const yourTry = document.getElementById("tries");
+const genNo = generateRandomNumber();
 let countTries = 1;
 
+// add event listener for guessButton and check if the user guess is a valid number
+guessButton.addEventListener("click", function () {
+    checkValidNumber();
+})
 
-
+/**
+ * Restart the game by reloading the browser
+ */
 function startGame() {
-    console.log("Start game");
-    // generateRandomNumber();
-    console.log("Loop 10 times");
-    console.log("  Enter your guess");
-    // checkValidNumber();
+    location.reload();
 }
 
 /**
@@ -29,6 +31,7 @@ function startGame() {
  */
 function generateRandomNumber() {
     let rNumber = Math.floor(Math.random() * 100) + 1;
+    console.log("The random number to guess is: " + rNumber);
     return rNumber;
 }
 
@@ -37,20 +40,17 @@ function generateRandomNumber() {
  * A valid number is from 1 to 100 
  */
 function checkValidNumber() {
-    console.log("  Check Valid Number 1 - 100"); // for debugging
 
     // Check if entered guess is valid (from 1 to 100)
     if (userGuess.value < 1 || userGuess.value > 100) {
         alert("Please enter a number between 1 and 100.");
     } else {
         console.log("Your guess " + userGuess.value + " is valid number"); // for debugging
-        console.log("--------------");  // for debugging
-        console.log("Call checkGuess"); // for debugging
-        console.log("--------------");  // for debugging
         if (countTries <= 10) {
             checkGuess();
         } else {
             alert("Awww... You lost! The number was " + genNo);
+            userGuess.value = "";
         }
     }
 }
@@ -72,17 +72,3 @@ function checkGuess() {
         alert(`Yuppie!! You won. The number was: ${userGuess.value}`);
     }
 }
-
-function incrementTries() {
-    console.log("                  increment tries");
-}
-
-function generateFeedback() {
-    console.log("                  Feedback message!");
-}
-
-// add event listener for guessButton and check if the user guess is a valid number
-guessButton.addEventListener("click", function () {
-    console.log("Random number when you press guessButton is: " + genNo);
-    checkValidNumber();
-})
