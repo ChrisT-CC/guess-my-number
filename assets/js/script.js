@@ -2,7 +2,7 @@
 // Get the button elements and add event listeners to them
 document.addEventListener("DOMContentLoaded", function () {
     let startButton = document.getElementById("new-game");
-    startButton.addEventListener("click", startGame)
+    startButton.addEventListener("click", startGame);
 });
 
 // Get elements form the DOM and assign them to variables
@@ -16,7 +16,7 @@ let countTries = 1;
 // add event listener for guessButton and check if the user guess is a valid number
 guessButton.addEventListener("click", function () {
     checkValidNumber();
-})
+});
 
 /**
  * Restart the game by reloading the browser
