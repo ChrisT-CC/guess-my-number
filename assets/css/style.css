@@ -114,3 +114,18 @@ a:hover {
     color: aliceblue;
     border: 10px outset #9A93A9;
 }
+
+/* Media queries */
+
+/* For small screens sizes up to 500px */
+@media screen and (max-width: 500px) {
+    header {
+        width: 75%;
+    }
+    .game-area {
+        width: 90%;
+    }
+    footer {
+        width: 90%;
+    }
+}
