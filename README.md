@@ -4,22 +4,20 @@
 
 Have fun!!
 
-A live version of the game will be here: 
+A live version of the game is here: [https://christ-cc.github.io/guess-my-number/](https://christ-cc.github.io/guess-my-number/)
 
-![Mockup image](assets/images/wireframes.png)
+![Mockup image](assets/images/mockup.jpg)
 
 ## Table of contents
 1. [UX](#UX)
     - [User Stories](#User-stories)
     - [Wireframes](#Wireframes)
-    - [Surface](#Surface)
 2. [Features](#Features)
     - [Existing Features](#Existing-Features) 
         - [Header](#Header)
         - [Game area](#Game-area)
         - [Feedback area](#Feedback-area)
         - [The footer](#The-footer)
-        - [Feature 5](#Feature-5)
         - [404 error page](#404-error-page)
     - [Future Features](#Future-Features)
 3. [Technologies Used](#Technologies-Used)
@@ -50,9 +48,6 @@ In this section you'll find elements of UX process.
 
 [Back to top](#Table-of-contents)
 
-
-### Surface
-
 ## Features
 
 ### Existing Features
@@ -65,6 +60,8 @@ In this section you'll find elements of UX process.
  - A random number is generated.
  - In the input box, the user can enter a number. The number is checked to be between 1 and 100 and if it's valid, is checked against the random number. 
  - The user has 10 tries to guess the number.
+
+ ![Game area](assets/images/game-area.jpg)
 
 ### - Feedback area
  - This is the area that helps the user to find the right number.
@@ -96,6 +93,22 @@ In this section you'll find elements of UX process.
 
 
 ## Testing
+
+The site was checked with validators with no errors.
+
+- HTML
+
+![Game area](assets/images/html-validation.jpg)
+
+- CSS
+
+![Game area](assets/images/css-validation.jpg)
+
+- js
+
+![Game area](assets/images/js-validation.jpg)
+
+[Back to top](#Table-of-contents)
 
 ## Deployment
 
