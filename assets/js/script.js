@@ -11,6 +11,8 @@ let userGuess = document.getElementById("answer-box");
 let feedback = document.getElementById("feedback");
 let yourTry = document.getElementById("tries");
 let genNo = generateRandomNumber();
+let countTries = 1;
+
 
 
 function startGame() {
@@ -35,19 +37,22 @@ function generateRandomNumber() {
  * A valid number is from 1 to 100 
  */
 function checkValidNumber() {
-    console.log("  Check Valid Number 1 - 100");
-    console.log(genNo); // debuging
+    console.log("  Check Valid Number 1 - 100"); // for debugging
 
     // Check if entered guess is valid (from 1 to 100)
-
     if (userGuess.value < 1 || userGuess.value > 100) {
         alert("Please enter a number between 1 and 100.");
-
     } else {
-        console.log("Your guess " + userGuess.value + " is valid number");
+        console.log("Your guess " + userGuess.value + " is valid number"); // for debugging
+        console.log("--------------");  // for debugging
+        console.log("Call checkGuess"); // for debugging
+        console.log("--------------");  // for debugging
+        if (countTries <= 10) {
+            checkGuess();
+        } else {
+            alert("Awww... You lost! The number was " + genNo);
+        }
     }
-    console.log("    if yes - checkGuess");
-    checkGuess();
 }
 
 /**
@@ -58,9 +63,11 @@ function checkGuess() {
     if (userGuess.value < genNo) {
         feedback.textContent = " too low";
         yourTry.textContent += userGuess.value + " ";
+        countTries++;
     } else if (userGuess.value > genNo) {
         feedback.textContent = " too high";
         yourTry.textContent += userGuess.value + " ";
+        countTries++;
     } else if (userGuess.value == genNo) {
         alert(`Yuppie!! You won. The number was: ${userGuess.value}`);
     }
